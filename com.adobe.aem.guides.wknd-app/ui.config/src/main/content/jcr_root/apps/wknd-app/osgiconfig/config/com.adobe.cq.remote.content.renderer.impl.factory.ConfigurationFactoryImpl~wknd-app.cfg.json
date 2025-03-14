@@ -1,0 +1,9 @@
+{
+    "getContentPathPattern": "/content/wknd-app/(.*)|/conf/wknd-app/(.*)/settings/wcm/templates/(.*)",
+    "getRemoteHTMLRendererUrl" : "http://localhost:3233/api/v1/web/guest/wknd-app-0.1.0/ssr",
+    "getRequestTimeout": 10000,
+    "getAdditionalRequestHeaders": [
+
+    ],
+    "getCompression": "none"
+}

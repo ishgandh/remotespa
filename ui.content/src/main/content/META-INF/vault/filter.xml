@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/wknd-app"/>
+    <filter root="/content/dam/wknd-app"/>
+    <filter root="/content/experience-fragment/wknd-app"/>
+    <filter root="/content/dam/formsanddocuments-fdm"/>
+    <filter root="/content/dam/formsanddocuments-themes"/>
+    <filter root="/content/wknd-app"/>
+    <filter root="/var/commerce/products/wknd-app-default"/>
+</workspaceFilter>
