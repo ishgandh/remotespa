@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/wknd-app"/>
-    <filter root="/content/dam/wknd-app"/>
-    <filter root="/content/experience-fragment/wknd-app"/>
-    <filter root="/content/dam/formsanddocuments-fdm"/>
-    <filter root="/content/dam/formsanddocuments-themes"/>
-    <filter root="/content/wknd-app"/>
+    <filter root="/conf/wknd-app" mode="merge"/>
+     <filter root="/conf/wknd-app/" mode="merge"/>
+    <filter root="/content/wknd-app" mode="merge"/>
+    <filter root="/content/dam/wknd-app" mode="merge">
+        <exclude pattern="/content/dam/wknd-app(/.*)?"/>
+        <include pattern="/content/dam/wknd-app/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/wknd-app/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments" >
+        <exclude pattern="/content/experience-fragments/.*"/>
+    </filter>
+    
+    <filter root="/content/experience-fragments/wknd-app" mode="merge"/>
+    <filter root="/content/experience-fragments/wknd-app/us" mode="merge"/>
+    <filter root="/content/experience-fragments/wknd-app/us/en" mode="merge"/>
+    <filter root="/content/experience-fragments/wknd-app/us/en/site" mode="merge"/>
+    <filter root="/content/experience-fragments/wknd-app/us/en/site/footer" mode="merge"/>
+    <filter root="/content/experience-fragments/wknd-app/us/en/site/footer/master" mode="merge"/>
+    <filter root="/content/experience-fragments/wknd-app/us/en/site/header" mode="merge"/>
+    <filter root="/content/experience-fragments/wknd-app/us/en/site/header/master" mode="merge"/>
+    <filter root="/content/experience-fragments/wknd-app/us/en/site/header/master/_jcr_content/root" mode="merge"/>
+    <filter root="/content/experience-fragments/wknd-app/us/en/site/header/master/_jcr_content/root/logo" mode="merge"/>
     <filter root="/var/commerce/products/wknd-app-default"/>
 </workspaceFilter>
