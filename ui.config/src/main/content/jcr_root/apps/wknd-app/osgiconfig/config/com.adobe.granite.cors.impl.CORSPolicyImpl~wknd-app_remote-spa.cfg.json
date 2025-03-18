@@ -10,7 +10,7 @@
         "OPTIONS"
     ],
     "alloworigin":[
-        "https://external-hosted-app", "localhost:3000","https://main--hac-poc--acseena.aem.page/"
+        "https://external-hosted-app", "localhost:3000","https://main--hac-poc--acseena.aem.page", "http://192.168.29.21:3000"
     ],
     "maxage:Integer":1800,
     "alloworiginregexp":[
