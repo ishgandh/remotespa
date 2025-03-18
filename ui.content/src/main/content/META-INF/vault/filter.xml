@@ -22,5 +22,4 @@
     <filter root="/content/experience-fragments/wknd-app/us/en/site/header/master" mode="merge"/>
     <filter root="/content/experience-fragments/wknd-app/us/en/site/header/master/_jcr_content/root" mode="merge"/>
     <filter root="/content/experience-fragments/wknd-app/us/en/site/header/master/_jcr_content/root/logo" mode="merge"/>
-    <filter root="/var/commerce/products/wknd-app-default"/>
 </workspaceFilter>

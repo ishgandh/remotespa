@@ -33,3 +33,10 @@
 <sly data-sly-call="${clientlib.all @ categories=['coralui3']}"/>
 <sly data-sly-call="${clientlib.css @ categories=['wknd-app.base']}"/>
 
+<sly data-sly-list="${page.htmlPageItems}">
+    <script data-sly-test="${item.location.name == 'header'}" 
+            data-sly-element="${item.element.name @ context='unsafe'}"  
+            data-sly-attribute="${item.attributes}"></script>
+</sly>
+
+

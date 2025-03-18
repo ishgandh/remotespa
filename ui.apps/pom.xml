@@ -54,13 +54,12 @@
                     <group>com.adobe.aem.guides.wkndapp</group>
                     <name>wknd-app.ui.apps</name>
                     <packageType>application</packageType>
-                    <validatorsSettings>
-<jackrabbit-filter>
-<options>
-<validRoots>/apps/wknd-app</validRoots>
-</options>
-</jackrabbit-filter>
-</validatorsSettings>
+                    <repositoryStructurePackages>
+                        <repositoryStructurePackage>
+                            <groupId>com.adobe.aem.guides.wkndapp</groupId>
+                            <artifactId>wknd-app.ui.apps.structure</artifactId>
+                        </repositoryStructurePackage>
+                    </repositoryStructurePackages>
                     <dependencies>
                     </dependencies>
                 </configuration>
@@ -112,14 +111,8 @@
             <artifactId>wknd-app.core</artifactId>
             <version>${project.version}</version>
         </dependency>
-<!-- Remote SPA project will provide all frontend resources
-        <dependency>
-            <groupId>com.adobe.aem.guides.wkndapp</groupId>
-            <artifactId>wknd-app.ui.frontend</artifactId>
-            <version>${project.version}</version>
-            <type>zip</type>
-        </dependency>
--->
+
+
 
         <!-- SPA Project Core (includes hierarchy page) -->
         <dependency>
@@ -131,7 +124,12 @@
             <groupId>com.adobe.aem</groupId>
             <artifactId>spa.project.core.core</artifactId>
         </dependency>
-        
+        <dependency>
+            <groupId>com.adobe.aem.guides.wkndapp</groupId>
+            <artifactId>wknd-app.ui.apps.structure</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
 
         <dependency>
             <groupId>com.adobe.aem</groupId>
