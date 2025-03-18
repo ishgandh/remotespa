@@ -1,15 +1,31 @@
 {
-  "alloworigin": ["http://localhost:3000"],
-  "allowedpaths": ["/(content|conf)/wknd-app.*"],
-  "supportedheaders": [
-    "Authorization",
-    "Origin",
-    "Accept",
-    "X-Requested-With",
-    "Content-Type",
-    "Access-Control-Request-Method",
-    "Access-Control-Request-Headers"
-  ],
-  "supportedmethods": ["GET","HEAD"],
-  "alloworiginregexp": []
+    "supportscredentials":true,
+    "exposedheaders":[
+        ""
+    ],
+    "supportedmethods":[
+        "GET",
+        "HEAD",
+        "POST",
+        "OPTIONS"
+    ],
+    "alloworigin":[
+        "https://external-hosted-app", "http://localhost:3000","https://main--hac-poc--acseena.aem.page", "http://192.168.29.21:3000","https://ue-remote-app.adobe.net"
+    ],
+    "maxage:Integer":1800,
+    "alloworiginregexp":[
+        ".*"
+    ],
+    "allowedpaths":[
+        ".*"
+    ],
+    "supportedheaders":[
+        "Origin",
+        "Accept",
+        "X-Requested-With",
+        "Content-Type",
+        "Access-Control-Request-Method",
+        "Access-Control-Request-Headers",
+        "authorization"
+    ]
 }

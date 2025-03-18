@@ -16,8 +16,7 @@
     <com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig
       jcr:primaryType="cq:Page">
         <jcr:content
-          jcr:primaryType="cq:PageContent"
-          prefixPath="http://localhost:3000">
+          jcr:primaryType="cq:PageContent">
             <items jcr:primaryType="nt:unstructured">
                 <css
                   jcr:primaryType="nt:unstructured"
