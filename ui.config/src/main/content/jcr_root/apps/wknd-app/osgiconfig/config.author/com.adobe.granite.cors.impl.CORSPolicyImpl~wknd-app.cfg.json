@@ -10,7 +10,7 @@
         "OPTIONS"
     ],
     "alloworigin":[
-        "https://external-hosted-app", "http://localhost:3000","https://main--hac-poc--acseena.aem.page", "http://192.168.29.21:3000","https://ue-remote-app.adobe.net"
+        "https://external-hosted-app", "http://localhost:3000","https://main--hac-poc--acseena.aem.page", "http://192.168.29.21:3000","https://ue-remote-app.adobe.net","https://hacremoteapp-o0upu41jx-seenas-projects.vercel.app/"
     ],
     "maxage:Integer":1800,
     "alloworiginregexp":[
